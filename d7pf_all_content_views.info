@@ -1,0 +1,13 @@
+name = d7pf_all_content_views
+description = Views to manage content
+core = 7.x
+package = Admin
+php = 5.2.4
+dependencies[] = ctools
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = content_all
+features[views_view][] = content_all_arg
+features[views_view][] = content_all_index
+features[views_view][] = content_all_vbo
