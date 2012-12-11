@@ -764,6 +764,7 @@ function d7pf_all_content_views_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page_3');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: User: Uid */
@@ -1375,7 +1376,7 @@ function d7pf_all_content_views_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
-  $handler->display->display_options['path'] = 'content-all-vbo';
+  $handler->display->display_options['path'] = 'content/all/vbo';
   $export['content_all_vbo'] = $view;
 
   return $export;
